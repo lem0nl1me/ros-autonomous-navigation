@@ -107,7 +107,6 @@ class FollowTheGapNode:
         [cite_start]self.current_yaw = 0.0                                                     # [cite: 107]
         [cite_start]self.is_recovering = False                                                 # [cite: 108]
         [cite_start]self.last_steering_angle = 0.0                                             # [cite: 109]
-        # 【裁判组要求】：默认设置为启用，实现上电即走
         self.is_enabled = True
 
         # --- ROS 发布者和订阅者 ---
@@ -279,7 +278,6 @@ class FollowTheGapNode:
         """
         核心回调函数，处理激光雷达数据并计算驾驶指令。
         """
-        # 即使默认启用，也可以通过话题在运行时禁用
         [cite_start]if not self.is_enabled: # [cite: 269]
             return
 
