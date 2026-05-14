@@ -23,6 +23,26 @@ The project was developed and optimized during the RAICOM CIAM Engineering Maker
 
 ---
 
+## Local Obstacle Avoidance
+
+This project includes a Follow-The-Gap local obstacle avoidance algorithm based on LaserScan data.
+
+Main features:
+
+- LaserScan preprocessing
+- Gap detection and scoring
+- Local path planning
+- Dynamic obstacle avoidance
+- Steering smoothing
+- Dynamic speed adjustment
+- Emergency braking
+- Recovery behavior
+- RViz visualization
+
+Code path:
+
+```text
+follow_the_gap/follow_the_gap.py
 ## Tech Stack
 
 ### Robot Development
