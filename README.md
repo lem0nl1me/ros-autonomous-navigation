@@ -22,6 +22,25 @@ The project was developed and optimized during the RAICOM CIAM Engineering Maker
 - Navigation parameter optimization based on A* algorithm
 
 ---
+### Follow-The-Gap Local Planner
+
+Implemented a local obstacle avoidance algorithm based on Follow-The-Gap.
+
+Main functions include:
+
+- LaserScan preprocessing
+- Gap detection
+- Gap scoring strategy
+- Dynamic obstacle avoidance
+- Steering smoothing
+- Dynamic speed adjustment
+- Emergency brake mechanism
+- Recovery behavior
+- RViz visualization
+
+The planner combines gap width, obstacle distance, current heading alignment and target heading alignment to select the optimal driving direction.
+
+---
 
 ## Local Obstacle Avoidance
 
